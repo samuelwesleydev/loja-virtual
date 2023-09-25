@@ -38,6 +38,14 @@ img{
     --font-primary:'Roboto', sans-serif;
 
     --color-background:#e2e6de;
+    --BG-color-header: #3CDB1E;
+
+    --BG-color-button:#20CD23;
+
+    --Font-size-name-product-PC:1.2rem;
+    --Font-size-name-product-MB:1.1rem;
+
+
 }
 
 
@@ -48,7 +56,7 @@ img{
 
 
 .header{
-    background: #3CDB1E;
+    background-color: var(--BG-color-header);
     width: 100%;
     padding: 20px 20px 0 20px;
 }
@@ -122,7 +130,6 @@ img{
     height: 30px;
     border: none;
     border-radius:.6rem;
-    /* color: #fff; */
     font-weight: bolder;
 }
 
@@ -132,7 +139,7 @@ img{
 .products{
     display: grid;
     justify-content: space-around;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 200px)); /*270px */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px)); 
     row-gap: 80px;
     column-gap: 10px;
     place-content: center;
@@ -148,7 +155,7 @@ img{
     justify-content: space-between;
 
     border-radius: .6rem;
-    height: 370px; /*340px*/
+    height: 370px;
     padding: 1.0rem;
 
     background: #fff;
@@ -234,7 +241,7 @@ img{
 }
 .buttons button:nth-child(1){
     margin-bottom: 2px;
-    background: #20CD23;
+    background: var(--BG-color-button);
     color: #fff;
 
     transition: .3s;

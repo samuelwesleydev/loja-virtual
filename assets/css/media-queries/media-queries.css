@@ -57,12 +57,55 @@
 }
 
 @media screen and (max-width:460px){
+
     .products{
         grid-template-columns: repeat(auto-fill, minmax(100px, 315px));
         padding-inline: 15px;
         
     }
     .product{
-        min-height: 450px;
+        min-height: 480px;
     }
+
+    .tittle-product{
+        font-size: 1.3rem;
+    }
+
+    .buttons button{
+        height: 40px;
+  
+    }
+
+
+
+
+
+
+    /* remove :hover for mobile */
+
+    .nav-links a:hover::before{
+        width: none; 
+        left: none; 
+    }
+    
+    .product:hover{
+        box-shadow:none;
+        transform: none;
+        transition: none;
+    }
+
+    .product .img-product img:hover{
+        transform: none;
+        transition: none;
+        cursor: none;
+    }
+
+    .buttons button:nth-child(1):hover{
+        box-shadow:none;
+    }
+
+    .buttons .more-details:hover{
+        text-decoration: none;
+    }
+
 }

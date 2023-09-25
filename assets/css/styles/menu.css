@@ -1,0 +1,101 @@
+
+.nav{
+    display: flex;
+    align-items: center;
+    background:#20CD23;
+    padding: 6px;
+    margin-top: 20px;
+    margin-inline: -20px;
+}
+
+.nav .button-menu{
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: .4rem;
+    padding: 5px;
+    margin:0 20px;
+
+    background: transparent;
+    color:black;
+}
+.nav .login .btn-login{
+    display: inline;
+}
+.nav .button-menu > i{
+    margin-right: 5px;
+}
+.nav-links{
+    position: absolute;
+    z-index: 999999;
+    top: 137px;
+
+    list-style-type: none;
+    background: #DDFE9F;
+    
+    width: 25.5rem;
+    height: 100vh;
+    text-align: center;
+    margin-left: -220px;
+    margin-top: .7rem;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: .5s;
+    
+}
+/* media querie menu de links */
+@media screen and (max-width: 679px){
+    .nav-links{
+        top: 206px;
+    }
+}
+
+
+.nav-links li{
+    font-size:1.8rem;
+    margin-bottom: 20px;
+}
+
+
+.nav-links li:nth-child(1){
+    margin-top: 20px;
+}
+
+.nav-links a{
+    position: relative;
+    color: black;
+}
+.nav-links a::before{
+    content: ''; 
+    position: absolute; 
+    bottom: 0;
+    left: 50%; 
+    right: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: #3CDB1E; 
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%); 
+}
+
+.nav-links a:hover::before{
+    width: 100%; 
+    left: 50%; 
+}
+
+
+/* Quando o menu for clicado / ativado */
+
+.nav-links.visible{
+    margin-left: -21px;
+    display: block;
+
+
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+

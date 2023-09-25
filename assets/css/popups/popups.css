@@ -1,0 +1,80 @@
+.login{
+    position: relative;
+}
+
+.login .popup-login{
+    display: none;
+    position: absolute;
+    z-index: 999999;
+
+    text-align: center;
+    padding: 40px;
+    width: 400px;
+
+    background: #DDFE9F;
+    border-radius: .6rem;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+    pointer-events: none;
+    opacity: 0;
+
+    transition: .3s;
+    
+    top: 35px;
+    left: 0px
+}
+.login .popup-login .btn-close-popup {
+    position: absolute;
+    background-color: transparent;
+    border:none;
+    top: 20px;
+    left: 20px;
+    transition: .3s;
+}
+.login .popup-login .btn-close-popup:hover{
+    transform: scale(1.1);
+}
+
+.login .popup-login > h2,
+.login .popup-login > p{
+    margin-bottom: 30px;
+}
+.login .popup-login .imgs-login > a > img{
+    width: 200px;
+    cursor: pointer;
+    transition: .2s;
+}
+.login .popup-login .imgs-login > a > img:hover{
+    transform: scale(1.05);
+
+    border-radius: .6rem;
+}
+
+
+
+/* QUANDO O POUP DO LOGIN FOR CLIADO / ATIVADO */
+
+.login .popup-login.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+/* popup para moveis */
+@media screen and (max-width:530px){
+    .login .popup-login{
+        top: 45px;
+        left: -90px;
+
+        max-width: 280px;
+
+    }
+    .login .popup-login > h2{
+        font-size: 1.8rem ;
+    }
+    .login .popup-login > p{
+        font-size: 1.5rem;
+    }
+}

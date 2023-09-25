@@ -61,6 +61,7 @@
     .products{
         grid-template-columns: repeat(auto-fill, minmax(100px, 315px));
         padding-inline: 15px;
+        row-gap: 15px;
         
     }
     .product{

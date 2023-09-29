@@ -60,6 +60,13 @@
         padding-inline:25px;
         row-gap: 25px;
     }
+    .tittle-product{
+        font-size: 1.7rem;
+    }
+    .buttons > button{
+        height: 45px;
+        font-size: 1.3rem;
+    }
 }
 
 

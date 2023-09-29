@@ -27,6 +27,7 @@ button{
 
 img{
     width: 100%;
+    height: auto;
 }
 
 /* ======================== */
@@ -57,7 +58,7 @@ img{
 
 .header{
     background-color: var(--BG-color-header);
-    width: 100%;
+    max-width: 100%;
     padding: 20px 20px 0 20px;
 }
 .header .top-header{
@@ -66,7 +67,10 @@ img{
     align-items: center;
     width: 100%;
 }
-
+.top-header{
+    max-width: 1900px;
+    margin: auto;
+}
 .header .top-header .logo > img{
     width:100px;
 }
@@ -139,14 +143,17 @@ img{
 .products{
     display: grid;
     justify-content: space-around;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 200px)); 
-    row-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(350px, 1fr));
+
+    row-gap: 40px;
     column-gap: 10px;
     place-content: center;
 
     padding-block: 30px;
     margin: auto;
-    max-width:1100px;
+    padding-inline: 30px;
+    max-width:1000px;
 
 }
 .product{
@@ -155,7 +162,7 @@ img{
     justify-content: space-between;
 
     border-radius: .6rem;
-    height: 370px;
+    height: 100%;
     padding: 1.0rem;
 
     background: #fff;
@@ -199,6 +206,9 @@ img{
 }
 .prices .price-normal{
     font-size:1.0rem;
+}
+.selector-colors {
+    padding:8px 0;
 }
 
 .selector-colors > p > small{

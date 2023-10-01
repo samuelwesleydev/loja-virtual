@@ -60,7 +60,7 @@
         flex-wrap:wrap;
 
         row-gap: 19px;
-        padding-inline:20px;
+        padding-inline:15px;
     }
     .product{
         display: flex;
@@ -70,8 +70,8 @@
 
         gap:15px;
     }
-    .product .img-product{
-        width:70%;
+    .product .img-product {
+        width:50%;
         height: 100%;
         display:flex;
         align-items: center;
@@ -97,8 +97,7 @@
     }
     .buttons button:nth-child(1){
         display:block;
+        height: 39px;
     }
 }
-
-
 

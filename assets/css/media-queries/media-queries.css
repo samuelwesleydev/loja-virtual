@@ -90,7 +90,7 @@
         font-size: 1.3rem;
     }
     .selector-colors {
-        display:none;
+        display:block;
     }
     .buttons > button{
         display :none;

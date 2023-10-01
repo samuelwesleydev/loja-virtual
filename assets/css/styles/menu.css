@@ -30,7 +30,7 @@
 .nav-links{
     position: absolute;
     z-index: 999999;
-    top: 136px;
+    top: 150px;
 
     list-style-type: none;
     background: #DDFE9F;
@@ -60,7 +60,7 @@
 }
 @media screen and (max-width: 529px){
     .nav-links{
-        top: 201px;
+        top: 215px;
     }
 }
 

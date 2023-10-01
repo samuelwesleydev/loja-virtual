@@ -230,15 +230,22 @@ img{
     cursor: pointer;
     border: 2px solid blue;
 }
-.color.yellow{
-    background-color: yellow;
+.color.natural{
+    background: #bbb5a9;
 }
-.color.red{
-    background: red;
+.color.blue{
+    background-color: #354465;
 }
-.color.grey{
-    background-color: gray;
+.color.black{
+    background-color: #4c4d4f;
+
 }
+/* quando for clicado/ativado a cor */
+.color.selected{
+    border: 2px solid blue;
+
+}
+
 
 .buttons button{
     font-size: 1.1rem;

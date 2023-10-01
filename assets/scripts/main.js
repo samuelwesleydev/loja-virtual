@@ -1,12 +1,15 @@
 import { PopupLogin } from "./popup-login.js"
 import { Menu } from "./menu.js"
+import { ChangeColor } from "./colors-product.js"
 
 const productsCards = document.querySelectorAll('.product')
 
 
+// action menu
+
 Menu.buttonMenu.onclick = ()=>{
     Menu.open()
-    produto.forEach((produto)=>{
+    productsCards.forEach((produto)=>{
         produto.addEventListener('mouseover', ()=>{
         })
     })
@@ -28,7 +31,26 @@ document.addEventListener('click', (event)=>{
     }
 })
 
+// action colors selected
 
+ChangeColor.colorNatural.forEach((color, index)=>{
+    color.onclick = ()=>{
+        ChangeColor.naturalColor(color,index)
+    }
+})
+ChangeColor.colorBlue.forEach((color, index)=>{
+    color.onclick = ()=>{
+        ChangeColor.blueColor(color,index)
+    }
+})
+ChangeColor.colorBlack.forEach((color, index)=>{
+    color.onclick = ()=>{
+        ChangeColor.blackColor(color,index)
+    }
+})
+
+
+// action login
 
 PopupLogin.buttonLogin.onclick = ()=>{
     PopupLogin.open()
@@ -43,3 +65,10 @@ document.addEventListener('click', (event)=>{
         PopupLogin.popup.classList.remove('visible')
     }
 })
+
+
+
+
+
+
+
